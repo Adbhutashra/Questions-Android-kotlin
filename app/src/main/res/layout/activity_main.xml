@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context=".MainActivity">
+
+    <!-- Add Question Field -->
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your question" />
+
+    <!-- Options and Correct Checkboxes -->
+    <LinearLayout
+        android:id="@+id/optionsLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionEditText"
+        android:orientation="vertical">
+
+        <!-- Option 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/correctCheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/optionEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option 1" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/correctCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/optionEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option 2" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/correctCheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/optionEditText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option 3" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/correctCheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/optionEditText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option 4" />
+
+
+
+        </LinearLayout>
+        <!-- Repeat similar layout for Option 2, 3, 4 -->
+
+    </LinearLayout>
+
+    <!-- Save Button -->
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsLayouts"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Image" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsLayouts"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save Question" />
+
+</RelativeLayout>
